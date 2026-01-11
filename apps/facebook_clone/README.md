@@ -1,16 +1,46 @@
-# facebook_clone
+# Facebook clone
 
-A new Flutter project.
+Une reproduction de l'interface de base de l'application facebook réalisé avec fluter.
 
-## Getting Started
+## Écrans réalisés
 
-This project is a starting point for a Flutter application.
+- **Accueil**
+- **Aperçu**
+  ![Écran d'Accueil](screenshots/Accueil.png)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Reel**
+- **Aperçu**
+  ![Écran de Reels](screenshots/Reel.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+- **Invitations**
+- **Aperçu**
+  ![Écran des Amis](screenshots/Invitations.png)
+
+
+- **Marketplace**
+- **Aperçu**
+  ![Écran de Marketplace](screenshots/Marketplace.png)
+
+
+- **Notifications**
+- **Aperçu**
+  ![Écran des Notifications](screenshots/Notifications.png)
+
+
+- **Menu**
+- **Aperçu**
+  ![Écran du Menu](screenshots/Menu.png)
+
+
+
+## Ce que j'ai appris
+
+- Gestion et utilisation du NestedScrollview et des Slivers
+
+## Packages principaux utilisé 
+- `Google-fonts`
+- `font-awesome_flutter`
+
+

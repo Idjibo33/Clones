@@ -7,4 +7,4 @@ Ce dépôt regroupe des reproductions d'interface d'applications populaires pour
 
 - **Facebook** [Lien] (./apps/FACEBOOK_CLONE)
   **Aperçu**
-  ![](screenshots/Accueil.png)
+  ![](./appsFACEBOOK_CLONE/screenshots/Accueil.png)

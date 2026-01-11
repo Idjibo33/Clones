@@ -5,6 +5,6 @@ Ce dépôt regroupe des reproductions d'interface d'applications populaires pour
 
 ## Clones disponibles
 
-- **Facebook** [Lien] (./apps/FACEBOOK_CLONE)
+- **Facebook:** [Lien](./apps/facebook_clone)
 - **Aperçu**
-  ![Image écran d'accueil](apps/FACEBOOK_CLONE/screenshots/Accueil.png)
+![Image écran d'accueil](apps/facebook_clone/screenshots/Accueil.png)

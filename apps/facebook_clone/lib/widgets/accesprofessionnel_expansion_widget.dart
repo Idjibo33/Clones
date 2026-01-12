@@ -21,15 +21,15 @@ class AccesprofessionnelExpansionWidget extends StatelessWidget {
         Row(
           spacing: 8,
           children: [
-            AccesprofessionnelCardWidget(
-              icon: FaIcon(
+            const AccesprofessionnelCardWidget(
+              icon: const FaIcon(
                 FontAwesomeIcons.user,
                 color: Styles.couleurPrimaire,
               ),
               titre: "Présence publique",
               description: "Obtenez des outils qui vous aident à vous dév...",
             ),
-            AccesprofessionnelCardWidget(
+            const AccesprofessionnelCardWidget(
               icon: Icon(Icons.verified, color: Styles.couleurPrimaire),
               titre: "Meta verified",
               description: "Montrez que votre est vérifié",

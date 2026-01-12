@@ -38,11 +38,11 @@ class ReelsSCreenWidget extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              FaIcon(FontAwesomeIcons.camera),
-                              Gap(12),
-                              FaIcon(FontAwesomeIcons.magnifyingGlass),
-                              Gap(12),
-                              FaIcon(FontAwesomeIcons.user),
+                              const FaIcon(FontAwesomeIcons.camera),
+                              const Gap(12),
+                              const FaIcon(FontAwesomeIcons.magnifyingGlass),
+                              const Gap(12),
+                              const FaIcon(FontAwesomeIcons.user),
                             ],
                           ),
                         ],
@@ -65,17 +65,17 @@ class ReelsSCreenWidget extends StatelessWidget {
                                       ),
                                       child: Padding(
                                         padding: const EdgeInsets.all(4.0),
-                                        child: CircleAvatar(),
+                                        child: const CircleAvatar(),
                                       ),
                                     ),
-                                    Gap(8),
+                                    const Gap(8),
                                     Text(
                                       "Utilisateur",
                                       style: GoogleFonts.roboto(),
                                     ),
-                                    Gap(8),
-                                    Icon(Icons.public, size: 18),
-                                    Gap(8),
+                                    const Gap(8),
+                                    const Icon(Icons.public, size: 18),
+                                    const Gap(8),
                                     Container(
                                       decoration: BoxDecoration(
                                         border: Border.all(
@@ -94,7 +94,7 @@ class ReelsSCreenWidget extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                Gap(8),
+                                const Gap(8),
                                 Text(
                                   "Ceci est la description de ma vidéo",
                                   style: GoogleFonts.roboto(),
@@ -106,34 +106,34 @@ class ReelsSCreenWidget extends StatelessWidget {
                             children: [
                               Column(
                                 children: [
-                                  FaIcon(FontAwesomeIcons.thumbsUp),
+                                  const FaIcon(FontAwesomeIcons.thumbsUp),
                                   Text("0", style: GoogleFonts.roboto()),
                                 ],
                               ),
-                              Gap(8),
+                              const Gap(8),
                               Column(
                                 children: [
-                                  FaIcon(FontAwesomeIcons.message),
+                                  const FaIcon(FontAwesomeIcons.message),
                                   Text("0", style: GoogleFonts.roboto()),
                                 ],
                               ),
-                              Gap(8),
+                              const Gap(8),
                               Column(
                                 children: [
-                                  FaIcon(FontAwesomeIcons.share),
+                                  const FaIcon(FontAwesomeIcons.share),
                                   Text("0", style: GoogleFonts.roboto()),
                                 ],
                               ),
                               Column(
                                 children: [
-                                  FaIcon(FontAwesomeIcons.bookmark),
+                                  const FaIcon(FontAwesomeIcons.bookmark),
                                   Text("0", style: GoogleFonts.roboto()),
                                 ],
                               ),
-                              Gap(8),
-                              FaIcon(FontAwesomeIcons.ellipsis),
-                              Gap(8),
-                              FaIcon(FontAwesomeIcons.volumeHigh),
+                              const Gap(8),
+                              const FaIcon(FontAwesomeIcons.ellipsis),
+                              const Gap(8),
+                              const FaIcon(FontAwesomeIcons.volumeHigh),
                             ],
                           ),
                         ],

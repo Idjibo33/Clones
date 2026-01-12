@@ -17,19 +17,19 @@ class FeedsScreenWidget extends StatelessWidget {
           slivers: [
             SliverList(
               delegate: SliverChildListDelegate([
-                Gap(8),
-                NewpostHomeWidget(),
-                Gap(12),
-                StoriesSectionWidget(),
-                Gap(12),
+                const Gap(8),
+                const NewpostHomeWidget(),
+                const Gap(12),
+                const StoriesSectionWidget(),
+                const Gap(12),
 
-                TextMediaPostWidget(),
-                Gap(12),
+                const TextMediaPostWidget(),
+                const Gap(12),
 
-                MediaPostWidget(),
-                Gap(12),
+                const MediaPostWidget(),
+                const Gap(12),
 
-                TextPostWidget(),
+                const TextPostWidget(),
               ]),
             ),
           ],

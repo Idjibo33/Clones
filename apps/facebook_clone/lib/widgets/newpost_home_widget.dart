@@ -14,8 +14,8 @@ class NewpostHomeWidget extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 8.0),
         child: Row(
           children: [
-            CircleAvatar(),
-            Gap(8),
+            const CircleAvatar(),
+            const Gap(8),
             Expanded(
               child: TextField(
                 decoration: InputDecoration(
@@ -26,8 +26,8 @@ class NewpostHomeWidget extends StatelessWidget {
                 ),
               ),
             ),
-            Gap(8),
-            FaIcon(FontAwesomeIcons.solidImage, color: Colors.green),
+            const Gap(8),
+            const FaIcon(FontAwesomeIcons.solidImage, color: Colors.green),
           ],
         ),
       ),

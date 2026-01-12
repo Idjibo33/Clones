@@ -40,7 +40,7 @@ class MarketplaceScreenWidget extends StatelessWidget {
                     ),
                   ],
                 ),
-                Gap(8),
+                const Gap(8),
                 Row(
                   spacing: 8,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -53,7 +53,7 @@ class MarketplaceScreenWidget extends StatelessWidget {
                             backgroundColor: Styles.couleurSecondaire,
                           ),
                           onPressed: () {},
-                          icon: FaIcon(
+                          icon: const FaIcon(
                             FontAwesomeIcons.pen,
                             color: Colors.black,
                           ),
@@ -72,7 +72,7 @@ class MarketplaceScreenWidget extends StatelessWidget {
                             backgroundColor: Styles.couleurSecondaire,
                           ),
                           onPressed: () {},
-                          icon: FaIcon(
+                          icon: const FaIcon(
                             FontAwesomeIcons.grip,
                             color: Colors.black,
                           ),

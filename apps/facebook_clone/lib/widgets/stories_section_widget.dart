@@ -63,7 +63,7 @@ class StoriesSectionWidget extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Gap(38),
+                      const Gap(38),
                       Text(
                         "Créer une story",
                         textAlign: TextAlign.center,
@@ -75,7 +75,9 @@ class StoriesSectionWidget extends StatelessWidget {
               ),
             ),
           ),
-          SliverList.builder(itemBuilder: (context, index) => StoryWidget()),
+          SliverList.builder(
+            itemBuilder: (context, index) => const StoryWidget(),
+          ),
         ],
       ),
     );

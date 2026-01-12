@@ -28,7 +28,7 @@ class NotificationScreenWidget extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    FaIcon(FontAwesomeIcons.magnifyingGlass),
+                    const FaIcon(FontAwesomeIcons.magnifyingGlass),
                   ],
                 ),
                 Text(
@@ -44,7 +44,7 @@ class NotificationScreenWidget extends StatelessWidget {
         ),
         SliverList(
           delegate: SliverChildBuilderDelegate((context, index) {
-            return NotificationCardWidget();
+            return const NotificationCardWidget();
           }, childCount: 1),
         ),
         SliverToBoxAdapter(
@@ -60,7 +60,7 @@ class NotificationScreenWidget extends StatelessWidget {
           ),
         ),
         SliverList.builder(
-          itemBuilder: (context, index) => NotificationCardWidget(),
+          itemBuilder: (context, index) => const NotificationCardWidget(),
           itemCount: 3,
         ),
         SliverToBoxAdapter(
@@ -76,7 +76,7 @@ class NotificationScreenWidget extends StatelessWidget {
           ),
         ),
         SliverList.builder(
-          itemBuilder: (context, index) => NotificationCardWidget(),
+          itemBuilder: (context, index) => const NotificationCardWidget(),
           itemCount: 2,
         ),
 

@@ -17,7 +17,7 @@ class AssistanceExpansionWidget extends StatelessWidget {
       showTrailingIcon: true,
       children: [
         ListTile(
-          leading: FaIcon(FontAwesomeIcons.houseChimneyMedical),
+          leading: const FaIcon(FontAwesomeIcons.houseChimneyMedical),
           title: Row(
             children: [
               Text("Assistance", style: GoogleFonts.roboto(fontSize: 16)),
@@ -25,14 +25,14 @@ class AssistanceExpansionWidget extends StatelessWidget {
           ),
         ),
         ListTile(
-          leading: FaIcon(FontAwesomeIcons.circleExclamation),
+          leading: const FaIcon(FontAwesomeIcons.circleExclamation),
           title: Text(
             "Signaler un problème",
             style: GoogleFonts.roboto(fontSize: 16),
           ),
         ),
         ListTile(
-          leading: FaIcon(FontAwesomeIcons.book),
+          leading: const FaIcon(FontAwesomeIcons.book),
           title: Text(
             "Conditions générales",
             style: GoogleFonts.roboto(fontSize: 16),

@@ -27,10 +27,10 @@ class MenuScreenWidget extends StatelessWidget {
             ),
           ),
           actions: [
-            FaIcon(FontAwesomeIcons.gear),
-            Gap(12),
-            FaIcon(FontAwesomeIcons.magnifyingGlass),
-            Gap(8),
+            const FaIcon(FontAwesomeIcons.gear),
+            const Gap(12),
+            const FaIcon(FontAwesomeIcons.magnifyingGlass),
+            const Gap(8),
           ],
         ),
         SliverToBoxAdapter(
@@ -52,7 +52,7 @@ class MenuScreenWidget extends StatelessWidget {
                             Row(
                               spacing: 8,
                               children: [
-                                CircleAvatar(),
+                                const CircleAvatar(),
                                 Text(
                                   "Utilisateur",
                                   style: GoogleFonts.roboto(
@@ -84,7 +84,7 @@ class MenuScreenWidget extends StatelessWidget {
                                 backgroundColor: Colors.grey,
                               ),
                               onPressed: () {},
-                              icon: FaIcon(FontAwesomeIcons.plus),
+                              icon: const FaIcon(FontAwesomeIcons.plus),
                             ),
                             Text(
                               "Créer une page facebook",
@@ -111,40 +111,40 @@ class MenuScreenWidget extends StatelessWidget {
             ),
           ),
         ),
-        SliverToBoxAdapter(child: RaccourcisListWidget()),
+        SliverToBoxAdapter(child: const RaccourcisListWidget()),
 
         SliverGrid(
           delegate: SliverChildListDelegate([
             MenuGridviewCardWidget(
-              icon: FaIcon(FontAwesomeIcons.clockRotateLeft),
+              icon: const FaIcon(FontAwesomeIcons.clockRotateLeft),
               titre: "Souvenirs,",
             ),
             MenuGridviewCardWidget(
-              icon: FaIcon(FontAwesomeIcons.bookmark),
+              icon: const FaIcon(FontAwesomeIcons.bookmark),
               titre: "Enregistrements",
             ),
             MenuGridviewCardWidget(
-              icon: FaIcon(FontAwesomeIcons.peopleGroup),
+              icon: const FaIcon(FontAwesomeIcons.peopleGroup),
               titre: "Groupes",
             ),
             MenuGridviewCardWidget(
-              icon: FaIcon(FontAwesomeIcons.video),
+              icon: const FaIcon(FontAwesomeIcons.video),
               titre: "Reels",
             ),
             MenuGridviewCardWidget(
-              icon: FaIcon(FontAwesomeIcons.store),
+              icon: const FaIcon(FontAwesomeIcons.store),
               titre: "Marketplace",
             ),
             MenuGridviewCardWidget(
-              icon: FaIcon(FontAwesomeIcons.userGroup),
+              icon: const FaIcon(FontAwesomeIcons.userGroup),
               titre: "Ami(e)s",
             ),
             MenuGridviewCardWidget(
-              icon: FaIcon(FontAwesomeIcons.rss),
+              icon: const FaIcon(FontAwesomeIcons.rss),
               titre: "Fils",
             ),
             MenuGridviewCardWidget(
-              icon: FaIcon(FontAwesomeIcons.calendar),
+              icon: const FaIcon(FontAwesomeIcons.calendar),
               titre: "Évènements",
             ),
           ]),
@@ -176,20 +176,20 @@ class MenuScreenWidget extends StatelessWidget {
                     ),
                   ),
                 ),
-                Divider(thickness: 1),
-                AssistanceExpansionWidget(),
+                const Divider(thickness: 1),
+                const AssistanceExpansionWidget(),
                 Container(
                   height: 1,
                   width: double.infinity,
                   color: Styles.couleurSecondaire,
                 ),
-                ParametreExpansionWidget(),
+                const ParametreExpansionWidget(),
                 Container(
                   height: 1,
                   width: double.infinity,
                   color: Styles.couleurSecondaire,
                 ),
-                AccesprofessionnelExpansionWidget(),
+                const AccesprofessionnelExpansionWidget(),
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(

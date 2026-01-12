@@ -24,12 +24,12 @@ class TextPostWidget extends StatelessWidget {
                         shape: BoxShape.circle,
                         border: Border.all(color: Styles.couleurPrimaire),
                       ),
-                      child: Padding(
+                      child: const Padding(
                         padding: const EdgeInsets.all(4.0),
-                        child: CircleAvatar(),
+                        child: const CircleAvatar(),
                       ),
                     ),
-                    Gap(8),
+                    const Gap(8),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -40,17 +40,17 @@ class TextPostWidget extends StatelessWidget {
                   ],
                 ),
 
-                Row(
+                const Row(
                   children: [
-                    FaIcon(FontAwesomeIcons.ellipsis),
-                    Gap(8),
-                    FaIcon(FontAwesomeIcons.xmark),
+                    const FaIcon(FontAwesomeIcons.ellipsis),
+                    const Gap(8),
+                    const FaIcon(FontAwesomeIcons.xmark),
                   ],
                 ),
               ],
             ),
           ),
-          Gap(16),
+          const Gap(16),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: Wrap(
@@ -63,7 +63,7 @@ class TextPostWidget extends StatelessWidget {
             ),
           ),
 
-          Gap(4),
+          const Gap(4),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: Row(
@@ -71,19 +71,19 @@ class TextPostWidget extends StatelessWidget {
                 Row(
                   children: [
                     FaIcon(FontAwesomeIcons.thumbsUp),
-                    Gap(8),
+                    const Gap(8),
                     Text("0", style: GoogleFonts.roboto()),
                   ],
                 ),
-                Gap(16),
+                const Gap(16),
                 Row(
                   children: [
                     FaIcon(FontAwesomeIcons.message),
-                    Gap(8),
+                    const Gap(8),
                     Text("0", style: GoogleFonts.roboto()),
                   ],
                 ),
-                Gap(16),
+                const Gap(16),
                 Row(
                   children: [
                     Icon(Icons.adaptive.share),
@@ -94,7 +94,7 @@ class TextPostWidget extends StatelessWidget {
               ],
             ),
           ),
-          Divider(thickness: 2, color: Styles.couleurSecondaire),
+          const Divider(thickness: 2, color: Styles.couleurSecondaire),
         ],
       ),
     );

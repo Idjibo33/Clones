@@ -17,7 +17,7 @@ class ParametreExpansionWidget extends StatelessWidget {
       showTrailingIcon: true,
       children: [
         ListTile(
-          leading: FaIcon(FontAwesomeIcons.user),
+          leading: const FaIcon(FontAwesomeIcons.user),
           title: Row(
             children: [
               Text("Paramètres", style: GoogleFonts.roboto(fontSize: 16)),
@@ -25,57 +25,57 @@ class ParametreExpansionWidget extends StatelessWidget {
           ),
         ),
         ListTile(
-          leading: FaIcon(FontAwesomeIcons.lock),
+          leading: const FaIcon(FontAwesomeIcons.lock),
           title: Text(
             "Centre de confidentialité",
             style: GoogleFonts.roboto(fontSize: 16),
           ),
         ),
         ListTile(
-          leading: FaIcon(FontAwesomeIcons.clock),
+          leading: const FaIcon(FontAwesomeIcons.clock),
           title: Text(
             "Gestion du temps",
             style: GoogleFonts.roboto(fontSize: 16),
           ),
         ),
         ListTile(
-          leading: FaIcon(FontAwesomeIcons.key),
+          leading: const FaIcon(FontAwesomeIcons.key),
           title: Text(
             "Demande d'appareils",
             style: GoogleFonts.roboto(fontSize: 16),
           ),
         ),
         ListTile(
-          leading: FaIcon(FontAwesomeIcons.rectangleAd),
+          leading: const FaIcon(FontAwesomeIcons.rectangleAd),
           title: Text(
             "Activité publicitaire récente",
             style: GoogleFonts.roboto(fontSize: 16),
           ),
         ),
         ListTile(
-          leading: FaIcon(FontAwesomeIcons.creditCard),
+          leading: const FaIcon(FontAwesomeIcons.creditCard),
           title: Text(
             "Commandes de paiements",
             style: GoogleFonts.roboto(fontSize: 16),
           ),
         ),
         ListTile(
-          leading: FaIcon(FontAwesomeIcons.link),
+          leading: const FaIcon(FontAwesomeIcons.link),
           title: Text(
             "Historique des liens",
             style: GoogleFonts.roboto(fontSize: 16),
           ),
         ),
         ListTile(
-          leading: Icon(Icons.dark_mode),
+          leading: const Icon(Icons.dark_mode),
           title: Text("Mode sombre", style: GoogleFonts.roboto(fontSize: 16)),
         ),
         ListTile(
-          leading: FaIcon(FontAwesomeIcons.earthAfrica),
+          leading: const FaIcon(FontAwesomeIcons.earthAfrica),
           title: Text("langue", style: GoogleFonts.roboto(fontSize: 16)),
         ),
         ListTile(
-          leading: FaIcon(FontAwesomeIcons.mobile),
+          leading: const FaIcon(FontAwesomeIcons.mobile),
           title: Text(
             "Utilisation des données mobiles",
             style: GoogleFonts.roboto(fontSize: 16),

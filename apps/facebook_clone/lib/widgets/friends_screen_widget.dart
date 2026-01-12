@@ -29,7 +29,7 @@ class FriendsScreenWidget extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        FaIcon(FontAwesomeIcons.magnifyingGlass),
+                        const FaIcon(FontAwesomeIcons.magnifyingGlass),
                       ],
                     ),
                     Row(
@@ -44,7 +44,7 @@ class FriendsScreenWidget extends StatelessWidget {
                             style: GoogleFonts.roboto(color: Colors.black),
                           ),
                         ),
-                        Gap(8),
+                        const Gap(8),
                         FilledButton(
                           style: FilledButton.styleFrom(
                             backgroundColor: Styles.couleurSecondaire,
@@ -57,7 +57,10 @@ class FriendsScreenWidget extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Divider(color: Styles.couleurSecondaire, thickness: 1),
+                    const Divider(
+                      color: Styles.couleurSecondaire,
+                      thickness: 1,
+                    ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -70,7 +73,7 @@ class FriendsScreenWidget extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            Gap(8),
+                            const Gap(8),
                             Text(
                               "10",
                               style: GoogleFonts.roboto(
@@ -97,7 +100,7 @@ class FriendsScreenWidget extends StatelessWidget {
             ),
             SliverList(
               delegate: SliverChildBuilderDelegate((context, index) {
-                return InvitationCardWidgt();
+                return const InvitationCardWidgt();
               }),
             ),
           ],

@@ -26,10 +26,10 @@ class TextMediaPostWidget extends StatelessWidget {
                       ),
                       child: Padding(
                         padding: const EdgeInsets.all(4.0),
-                        child: CircleAvatar(),
+                        child: const CircleAvatar(),
                       ),
                     ),
-                    Gap(8),
+                    const Gap(8),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -40,17 +40,17 @@ class TextMediaPostWidget extends StatelessWidget {
                   ],
                 ),
 
-                Row(
+                const Row(
                   children: [
-                    FaIcon(FontAwesomeIcons.ellipsis),
-                    Gap(8),
-                    FaIcon(FontAwesomeIcons.xmark),
+                    const FaIcon(FontAwesomeIcons.ellipsis),
+                    const Gap(8),
+                    const FaIcon(FontAwesomeIcons.xmark),
                   ],
                 ),
               ],
             ),
           ),
-          Gap(16),
+          const Gap(16),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: Wrap(
@@ -72,38 +72,38 @@ class TextMediaPostWidget extends StatelessWidget {
             height: 1,
             color: Styles.couleurSecondaire,
           ),
-          Gap(4),
+          const Gap(4),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: Row(
               children: [
                 Row(
                   children: [
-                    FaIcon(FontAwesomeIcons.thumbsUp),
-                    Gap(8),
+                    const FaIcon(FontAwesomeIcons.thumbsUp),
+                    const Gap(8),
                     Text("0", style: GoogleFonts.roboto()),
                   ],
                 ),
-                Gap(16),
+                const Gap(16),
                 Row(
                   children: [
-                    FaIcon(FontAwesomeIcons.message),
-                    Gap(8),
+                    const FaIcon(FontAwesomeIcons.message),
+                    const Gap(8),
                     Text("0", style: GoogleFonts.roboto()),
                   ],
                 ),
-                Gap(16),
+                const Gap(16),
                 Row(
                   children: [
-                    Icon(Icons.adaptive.share),
-                    Gap(8),
+                    const Icon(Icons.share),
+                    const Gap(8),
                     Text("0", style: GoogleFonts.roboto()),
                   ],
                 ),
               ],
             ),
           ),
-          Divider(thickness: 2, color: Styles.couleurSecondaire),
+          const Divider(thickness: 2, color: Styles.couleurSecondaire),
         ],
       ),
     );

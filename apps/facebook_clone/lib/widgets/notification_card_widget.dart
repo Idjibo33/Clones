@@ -33,7 +33,7 @@ class NotificationCardWidget extends StatelessWidget {
                         shape: BoxShape.circle,
                         color: Styles.couleurPrimaire,
                       ),
-                      child: Icon(
+                      child: const Icon(
                         Icons.messenger_outline,
                         size: 14,
                         color: Colors.white,
@@ -64,14 +64,14 @@ class NotificationCardWidget extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Gap(12),
+                    const Gap(12),
                     Text("1h", style: GoogleFonts.roboto()),
                   ],
                 ),
               ],
             ),
 
-            FaIcon(FontAwesomeIcons.ellipsis),
+            const FaIcon(FontAwesomeIcons.ellipsis),
           ],
         ),
       ),

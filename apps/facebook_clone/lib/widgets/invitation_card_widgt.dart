@@ -15,11 +15,11 @@ class InvitationCardWidgt extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 8.0),
         child: Row(
           children: [
-            CircleAvatar(
+            const CircleAvatar(
               radius: 40,
-              child: FaIcon(FontAwesomeIcons.solidUser, size: 30),
+              child: const FaIcon(FontAwesomeIcons.solidUser, size: 30),
             ),
-            Gap(8),
+            const Gap(8),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -49,7 +49,7 @@ class InvitationCardWidgt extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Gap(8),
+                      const Gap(8),
                       Expanded(
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(

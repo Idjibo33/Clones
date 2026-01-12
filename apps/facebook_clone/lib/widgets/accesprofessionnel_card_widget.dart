@@ -42,7 +42,7 @@ class AccesprofessionnelCardWidget extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Gap(22),
+                      const Gap(22),
                       Text(
                         titre,
                         style: GoogleFonts.roboto(fontWeight: FontWeight.bold),

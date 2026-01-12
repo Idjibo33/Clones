@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
           child: NestedScrollView(
             headerSliverBuilder: (context, innerBoxIsScrolled) {
               return [
-                SliverToBoxAdapter(child: SizedBox(height: 8)),
+                SliverToBoxAdapter(child: const SizedBox(height: 8)),
                 SliverAppBar(
                   toolbarHeight: 30,
                   title: Text(
@@ -34,12 +34,12 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   actions: [
-                    Icon(Icons.add_box_outlined, size: 28),
-                    Gap(8),
-                    FaIcon(FontAwesomeIcons.magnifyingGlass),
-                    Gap(8),
-                    FaIcon(FontAwesomeIcons.message),
-                    Gap(8),
+                    const Icon(Icons.add_box_outlined, size: 28),
+                    const Gap(8),
+                    const FaIcon(FontAwesomeIcons.magnifyingGlass),
+                    const Gap(8),
+                    const FaIcon(FontAwesomeIcons.message),
+                    const Gap(8),
                   ],
                 ),
                 SliverAppBar(
@@ -50,12 +50,12 @@ class HomeScreen extends StatelessWidget {
                     indicatorColor: Styles.couleurPrimaire,
                     labelColor: Styles.couleurPrimaire,
                     tabs: [
-                      Icon(Icons.home_outlined, size: 28),
-                      Icon(Icons.video_library_outlined, size: 28),
-                      Icon(Icons.people_outline, size: 28),
-                      Icon(Icons.store_mall_directory_outlined, size: 28),
-                      FaIcon(FontAwesomeIcons.bell),
-                      Icon(Icons.menu, size: 28),
+                      const Icon(Icons.home_outlined, size: 28),
+                      const Icon(Icons.video_library_outlined, size: 28),
+                      const Icon(Icons.people_outline, size: 28),
+                      const Icon(Icons.store_mall_directory_outlined, size: 28),
+                      const FaIcon(FontAwesomeIcons.bell),
+                      const Icon(Icons.menu, size: 28),
                     ],
                   ),
                 ),
@@ -63,12 +63,12 @@ class HomeScreen extends StatelessWidget {
             },
             body: TabBarView(
               children: [
-                FeedsScreenWidget(),
-                ReelsSCreenWidget(),
-                FriendsScreenWidget(),
-                MarketplaceScreenWidget(),
-                NotificationScreenWidget(),
-                MenuScreenWidget(),
+                const FeedsScreenWidget(),
+                const ReelsSCreenWidget(),
+                const FriendsScreenWidget(),
+                const MarketplaceScreenWidget(),
+                const NotificationScreenWidget(),
+                const MenuScreenWidget(),
               ],
             ),
           ),

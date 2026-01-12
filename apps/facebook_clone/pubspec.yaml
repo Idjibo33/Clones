@@ -38,10 +38,19 @@ dependencies:
   fluent_ui: ^4.13.0
   google_fonts: ^7.0.0
   font_awesome_flutter: ^10.12.0
+  flutter_launcher_icons: ^0.14.4
 
 dev_dependencies:
+  flutter_launcher_icons: "^0.14.4"
   flutter_test:
     sdk: flutter
+
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/facebook.png"
+  min_sdk_android: 21 # android min sdk min:16, 
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

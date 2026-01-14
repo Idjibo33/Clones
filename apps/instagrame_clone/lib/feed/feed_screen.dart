@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagrame_clone/feed/widgets/feed_appbar_widget.dart';
 import 'package:instagrame_clone/feed/widgets/stories_widget.dart';
+import 'package:instagrame_clone/feed/widgets/video_post_widget.dart';
 
 class Feed extends StatelessWidget {
   const Feed({super.key});
@@ -11,6 +12,7 @@ class Feed extends StatelessWidget {
       slivers: [
         FeedAppbarWidget(),
         SliverToBoxAdapter(child: StoriesWidget()),
+        SliverToBoxAdapter(child: VideoPostWidget()),
       ],
     );
   }

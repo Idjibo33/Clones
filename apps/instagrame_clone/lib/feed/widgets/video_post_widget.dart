@@ -122,6 +122,9 @@ class VideoPostWidget extends StatelessWidget {
                       text: "Utilisateur",
                       style: GoogleFonts.roboto(fontWeight: FontWeight.bold),
                     ),
+
+                    WidgetSpan(child: SizedBox(width: 10)),
+
                     TextSpan(
                       text:
                           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab",

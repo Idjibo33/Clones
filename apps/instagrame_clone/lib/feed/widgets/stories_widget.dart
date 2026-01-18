@@ -15,7 +15,7 @@ class StoriesWidget extends StatelessWidget {
         slivers: [
           SliverToBoxAdapter(child: const UserstoryWidget()),
           SliverList.builder(
-            itemBuilder: (context, index) => const FollowingStoryWidget(),
+            itemBuilder: (context, index) => FollowingStoryWidget(),
           ),
         ],
       ),

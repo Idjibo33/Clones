@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hugeicons/hugeicons.dart';
+import 'package:instagrame_clone/reels/widgets/multi_circle_avatars_widget.dart';
 
 class ReelWidget extends StatelessWidget {
   const ReelWidget({super.key});
@@ -9,11 +10,12 @@ class ReelWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox.expand(
       child: Stack(
+        alignment: Alignment.center,
         children: [
-          Container(
+          SizedBox(
             width: double.infinity,
             height: double.infinity,
-            decoration: BoxDecoration(color: Colors.grey),
+            child: Image.asset('assets/images/post.jpg', fit: BoxFit.cover),
           ),
           CustomScrollView(
             slivers: [
@@ -22,91 +24,35 @@ class ReelWidget extends StatelessWidget {
                 snap: true,
                 centerTitle: true,
                 backgroundColor: Colors.transparent,
-                leading: Icon(Icons.add),
-                title: FittedBox(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    spacing: 12,
-                    children: [
-                      Text(
-                        "Reels",
-                        style: GoogleFonts.roboto(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
+                leading: Icon(Icons.add, color: Colors.white),
+                title: Row(
+                  spacing: 16,
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Reels",
+                      style: GoogleFonts.roboto(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
                       ),
-                      Text(
-                        "Reels",
-                        style: GoogleFonts.roboto(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                    ),
+                    Row(
+                      spacing: 4,
+                      children: [
+                        Text(
+                          "Amis",
+                          style: GoogleFonts.roboto(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 50,
-
-                        width: 100,
-                        child: Stack(
-                          alignment: AlignmentGeometry.center,
-                          children: [
-                            Positioned(
-                              left: 30,
-
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(
-                                    color: Colors.grey,
-                                    width: 2,
-                                  ),
-                                ),
-                                child: CircleAvatar(
-                                  radius: 15,
-                                  backgroundColor: Colors.orange,
-                                ),
-                              ),
-                            ),
-                            Positioned(
-                              left: 15,
-
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(
-                                    color: Colors.grey,
-                                    width: 2,
-                                  ),
-                                ),
-                                child: CircleAvatar(
-                                  radius: 15,
-                                  backgroundColor: Colors.white,
-                                ),
-                              ),
-                            ),
-                            Positioned(
-                              left: 0,
-
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(
-                                    color: Colors.grey,
-                                    width: 2,
-                                  ),
-                                ),
-                                child: CircleAvatar(
-                                  radius: 15,
-                                  backgroundColor: Colors.green,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+                        MultiCircleAvatarsWidget(radius: 10),
+                      ],
+                    ),
+                  ],
                 ),
               ),
               SliverFillRemaining(
@@ -126,7 +72,11 @@ class ReelWidget extends StatelessWidget {
                               Row(
                                 spacing: 12,
                                 children: [
-                                  CircleAvatar(),
+                                  CircleAvatar(
+                                    backgroundImage: AssetImage(
+                                      'assets/images/user3.jpg',
+                                    ),
+                                  ),
                                   Text(
                                     "Utilisateur",
                                     style: GoogleFonts.roboto(
@@ -170,7 +120,7 @@ class ReelWidget extends StatelessWidget {
                                     color: Colors.white,
                                   ),
                                   Text(
-                                    "45 k",
+                                    "0",
                                     style: GoogleFonts.roboto(
                                       color: Colors.white,
                                     ),
@@ -181,11 +131,23 @@ class ReelWidget extends StatelessWidget {
                                 spacing: 4,
                                 children: [
                                   HugeIcon(
-                                    icon: HugeIcons.strokeRoundedFavourite,
+                                    icon: HugeIcons.strokeRoundedMessage01,
                                     color: Colors.white,
                                   ),
                                   Text(
-                                    "45 k",
+                                    "0",
+                                    style: GoogleFonts.roboto(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Column(
+                                spacing: 4,
+                                children: [
+                                  Icon(Icons.repeat, color: Colors.white),
+                                  Text(
+                                    "0",
                                     style: GoogleFonts.roboto(
                                       color: Colors.white,
                                     ),
@@ -196,11 +158,11 @@ class ReelWidget extends StatelessWidget {
                                 spacing: 4,
                                 children: [
                                   HugeIcon(
-                                    icon: HugeIcons.strokeRoundedFavourite,
+                                    icon: HugeIcons.strokeRoundedShare08,
                                     color: Colors.white,
                                   ),
                                   Text(
-                                    "45 k",
+                                    "0",
                                     style: GoogleFonts.roboto(
                                       color: Colors.white,
                                     ),
@@ -211,31 +173,36 @@ class ReelWidget extends StatelessWidget {
                                 spacing: 4,
                                 children: [
                                   HugeIcon(
-                                    icon: HugeIcons.strokeRoundedFavourite,
+                                    icon: HugeIcons.strokeRoundedBookmark02,
                                     color: Colors.white,
                                   ),
                                   Text(
-                                    "45 k",
+                                    "0",
                                     style: GoogleFonts.roboto(
                                       color: Colors.white,
                                     ),
                                   ),
                                 ],
                               ),
-                              Column(
-                                spacing: 4,
-                                children: [
-                                  HugeIcon(
-                                    icon: HugeIcons.strokeRoundedFavourite,
-                                    color: Colors.white,
-                                  ),
-                                  Text(
-                                    "45 k",
-                                    style: GoogleFonts.roboto(
-                                      color: Colors.white,
+                              SizedBox(height: 2),
+                              Icon(
+                                Icons.more_vert_outlined,
+                                color: Colors.white,
+                              ),
+                              SizedBox(height: 2),
+                              Container(
+                                height: 25,
+                                width: 25,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                      'assets/images/user3.jpg',
                                     ),
                                   ),
-                                ],
+                                  border: Border.all(width: 2),
+                                  borderRadius: BorderRadius.circular(6),
+                                  color: Colors.blue.shade50,
+                                ),
                               ),
                             ],
                           ),
@@ -246,6 +213,22 @@ class ReelWidget extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          Container(
+            height: 60,
+            width: 60,
+
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.black54,
+            ),
+            child: IconButton(
+              onPressed: () {},
+              icon: HugeIcon(
+                icon: HugeIcons.strokeRoundedVolumeHigh,
+                color: Colors.white,
+              ),
+            ),
           ),
         ],
       ),

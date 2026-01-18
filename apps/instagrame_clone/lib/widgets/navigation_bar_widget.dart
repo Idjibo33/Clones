@@ -38,7 +38,12 @@ class NavigationBarWidget extends StatelessWidget {
           activeIcon: HugeIcon(icon: HugeIcons.strokeRoundedSearch01),
           label: "Recherche",
         ),
-        const BottomNavigationBarItem(icon: CircleAvatar(), label: "Recherche"),
+        const BottomNavigationBarItem(
+          icon: CircleAvatar(
+            backgroundImage: AssetImage('assets/images/user2.jpg'),
+          ),
+          label: "Recherche",
+        ),
       ],
     );
   }

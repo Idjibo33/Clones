@@ -18,7 +18,10 @@ class FollowingStoryWidget extends StatelessWidget {
         ),
         child: Padding(
           padding: const EdgeInsets.all(4.0),
-          child: const CircleAvatar(radius: 30),
+          child: const CircleAvatar(
+            radius: 30,
+            backgroundImage: AssetImage('assets/images/user3.jpg'),
+          ),
         ),
       ),
     );

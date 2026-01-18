@@ -9,10 +9,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  gap: ^3.0.1
   google_fonts: ^7.0.1
   gradient_borders: ^1.0.2
   hugeicons: ^1.1.4
   provider: ^6.1.5+1
+
 
 dev_dependencies:
   flutter_test:
@@ -21,3 +23,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  
+  assets:
+    - assets/images/
+
+

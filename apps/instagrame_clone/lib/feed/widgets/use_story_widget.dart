@@ -24,10 +24,7 @@ class UserstoryWidget extends StatelessWidget {
               color: Colors.black,
               border: Border.all(color: Colors.white, width: 3),
             ),
-            child: HugeIcon(
-              icon: HugeIcons.strokeRoundedAdd01,
-              color: Colors.white,
-            ),
+            child: Icon(Icons.add, color: Colors.white),
           ),
         ],
       ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instagrame_clone/recherche/recherche_item_card_widget.dart';
+import 'package:instagrame_clone/recherche/widgets/recherche_item_card_widget.dart';
 import 'package:instagrame_clone/recherche/widgets/recherche_header_widget.dart';
 
 class RechercheScreen extends StatelessWidget {

@@ -22,7 +22,7 @@ class AccesprofessionnelExpansionWidget extends StatelessWidget {
           spacing: 8,
           children: [
             const AccesprofessionnelCardWidget(
-              icon: const FaIcon(
+              icon: FaIcon(
                 FontAwesomeIcons.user,
                 color: Styles.couleurPrimaire,
               ),

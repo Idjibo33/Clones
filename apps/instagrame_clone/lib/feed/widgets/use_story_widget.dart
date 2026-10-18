@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hugeicons/hugeicons.dart';
 
 class UserstoryWidget extends StatelessWidget {
   const UserstoryWidget({super.key});

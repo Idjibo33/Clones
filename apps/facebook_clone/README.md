@@ -1,6 +1,8 @@
 # Facebook clone
 
-Une reproduction de l'interface de base de l'application facebook réalisé avec flutter.
+Une reproduction de l'interface de base de l'application Facebook, réalisée avec Flutter.
+
+> Exercice indépendant d'apprentissage UI, non affilié à Meta / Facebook.
 
 ## Écrans réalisés
 
@@ -37,10 +39,20 @@ Une reproduction de l'interface de base de l'application facebook réalisé avec
 
 ## Ce que j'ai appris
 
-- Gestion et utilisation du NestedScrollview et des Slivers
+- Gestion et utilisation du NestedScrollView et des Slivers
 
-## Packages principaux utilisé 
-- `Google-fonts`
-- `font-awesome_flutter`
+## Packages principaux utilisés
+
+- `fluent_ui`
+- `google_fonts`
+- `font_awesome_flutter`
+- `gap`
+
+## Lancer l'application
+
+```bash
+flutter pub get
+flutter run
+```
 
 

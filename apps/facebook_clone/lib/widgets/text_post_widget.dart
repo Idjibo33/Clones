@@ -25,8 +25,8 @@ class TextPostWidget extends StatelessWidget {
                         border: Border.all(color: Styles.couleurPrimaire),
                       ),
                       child: const Padding(
-                        padding: const EdgeInsets.all(4.0),
-                        child: const CircleAvatar(),
+                        padding: EdgeInsets.all(4.0),
+                        child: CircleAvatar(),
                       ),
                     ),
                     const Gap(8),
@@ -42,9 +42,9 @@ class TextPostWidget extends StatelessWidget {
 
                 const Row(
                   children: [
-                    const FaIcon(FontAwesomeIcons.ellipsis),
-                    const Gap(8),
-                    const FaIcon(FontAwesomeIcons.xmark),
+                    FaIcon(FontAwesomeIcons.ellipsis),
+                    Gap(8),
+                    FaIcon(FontAwesomeIcons.xmark),
                   ],
                 ),
               ],

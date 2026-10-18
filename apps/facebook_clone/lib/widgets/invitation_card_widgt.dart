@@ -17,7 +17,7 @@ class InvitationCardWidgt extends StatelessWidget {
           children: [
             const CircleAvatar(
               radius: 40,
-              child: const FaIcon(FontAwesomeIcons.solidUser, size: 30),
+              child: FaIcon(FontAwesomeIcons.solidUser, size: 30),
             ),
             const Gap(8),
             Column(

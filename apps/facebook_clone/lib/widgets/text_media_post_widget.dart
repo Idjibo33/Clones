@@ -42,9 +42,9 @@ class TextMediaPostWidget extends StatelessWidget {
 
                 const Row(
                   children: [
-                    const FaIcon(FontAwesomeIcons.ellipsis),
-                    const Gap(8),
-                    const FaIcon(FontAwesomeIcons.xmark),
+                    FaIcon(FontAwesomeIcons.ellipsis),
+                    Gap(8),
+                    FaIcon(FontAwesomeIcons.xmark),
                   ],
                 ),
               ],
